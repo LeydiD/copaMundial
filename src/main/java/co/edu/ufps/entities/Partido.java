@@ -1,8 +1,5 @@
 package co.edu.ufps.entities;
 
-
-
-import java.sql.Time;
 import java.util.Date;
 import java.util.List;
 
@@ -40,4 +37,13 @@ public class Partido {
 	@JoinColumn(name="estadio_id")
 	private Estadio estadio;
 	
+	
+	public void addResultado(Resultado resultado) {
+		this.resultados.add(resultado);
+	}
+
+	public void removeResultado(Resultado resultado) {
+		this.resultados.remove(resultado);
+		
+	}
 }

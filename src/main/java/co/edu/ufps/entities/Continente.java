@@ -33,4 +33,13 @@ public class Continente {
 	@JsonIgnore
 	private List<Seleccion> selecciones;
 	
+	public void addSeleccion(Seleccion seleccion) {
+		this.selecciones.add(seleccion);
+	}
+
+	public void removeEmpleado(Seleccion seleccion) {
+		this.selecciones.remove(seleccion);
+		
+	}
+	
 }

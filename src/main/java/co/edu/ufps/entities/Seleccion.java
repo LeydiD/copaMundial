@@ -42,4 +42,13 @@ public class Seleccion {
 	@JsonIgnore
 	private List<Resultado> resultados;
 	
+	public void addResultado(Resultado resultado) {
+		this.resultados.add(resultado);
+	}
+
+	public void removeResultado(Resultado resultado) {
+		this.resultados.remove(resultado);
+		
+	}
+	
 }

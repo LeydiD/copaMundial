@@ -35,4 +35,13 @@ public class Estadio {
 	@OneToMany(mappedBy="estadio", cascade=CascadeType.ALL)
 	@JsonIgnore
 	private List<Partido> partidos;
+	
+	public void addPartido(Partido partido) {
+		this.partidos.add(partido);
+	}
+
+	public void removePartido(Partido partido) {
+		this.partidos.remove(partido);
+		
+	}
 }
